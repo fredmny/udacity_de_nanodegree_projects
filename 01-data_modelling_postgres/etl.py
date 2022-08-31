@@ -30,7 +30,7 @@ def process_log_file(cur, filepath):
     
     # insert time data records
     time_data = [
-        df['ts'],
+        t,
         t.dt.hour,
         t.dt.day,
         t.dt.isocalendar().week,
@@ -73,8 +73,7 @@ def process_log_file(cur, filepath):
 
         # insert songplay record
         songplay_data = (
-            index,
-            row.ts,
+            pd.to_datetime(arg=row.ts, unit='ms'),
             row.userId,
             row.level,
             songid,
