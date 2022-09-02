@@ -10,6 +10,8 @@ To do so, in this project, a Postgres database is created. This database is call
 - `artists` (dimension table) - data about the song artists in the database
 - `time` (dimension table) - timestamps of the start time for every record in the songplays table broken down in specific units
 
+![Entity Relationship Diagram](./udacity-de-project_01.png)
+
 These tables are in the star schema, making it easy to aggregate data on the songplays fact table and at the same time easy to join with dimension tables for filtering and specify aggregation parameters.
 
 After the creation of these tables the `json` files ar processed and insertes into this tables:
