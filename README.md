@@ -39,6 +39,3 @@ A running Postgres instance with following initial credentials is also necessary
 - user: `student`
 - password: `student`
 - database: `studentdb`
-
-TODO:
-- update diagram with correct data types
